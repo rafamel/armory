@@ -2,7 +2,7 @@
   "name": "armory",
   "version": "0.0.0",
   "author": "Rafa Mel",
-  "description": "A bells & whistles riseup based monorepo starter",
+  "description": "A monorepo of simple frontend libraries for everyday happiness",
   "keywords": [],
   "private": true,
   "engines": {
