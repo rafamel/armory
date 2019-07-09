@@ -18,6 +18,8 @@ If you find it useful, consider [starring the project](https://github.com/rafame
 
 ## Usage
 
+* [Documentation](https://rafamel.github.io/armory/remote-script/globals.html)
+
 ```javascript
 import load from 'remote-script';
 
