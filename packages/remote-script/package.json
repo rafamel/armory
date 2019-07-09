@@ -1,6 +1,6 @@
 {
   "name": "remote-script",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Rafa Mel",
   "description": "Programmatically Loads remote scripts via script tag",
   "keywords": [
@@ -54,8 +54,6 @@
   "bugs": {
     "url": "https://github.com/rafamel/armory/issues"
   },
-  "devDependencies": {},
-  "dependencies": {},
   "@pika/pack": {
     "pipeline": [
       [
