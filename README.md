@@ -10,4 +10,5 @@ If you find it useful, consider [starring the project](https://github.com/rafame
 
 ## Packages
 
+* [*variable-theming:*](https://github.com/rafamel/armory/tree/master/packages/variable-theming) CSS theming based on custom properties.
 * [*remote-script:*](https://github.com/rafamel/armory/tree/master/packages/remote-script) programmatically Loads remote scripts via script tag.
