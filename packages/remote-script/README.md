@@ -14,7 +14,7 @@ If you find it useful, consider [starring the project](https://github.com/rafame
 
 ## Install
 
-[`npm install remote-scripts`](https://www.npmjs.com/package/remote-script)
+[`npm install remote-script`](https://www.npmjs.com/package/remote-script)
 
 ## Usage
 
