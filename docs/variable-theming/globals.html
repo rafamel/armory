@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>remote-script 0.1.1</title>
+	<title>variable-theming 1.0.3</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">remote-script 0.1.1</a>
+					<a href="index.html" class="title">variable-theming 1.0.3</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> remote-script 0.1.1</h1>
+			<h1> variable-theming 1.0.3</h1>
 		</div>
 	</div>
 </header>
@@ -68,43 +68,107 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface"><a href="interfaces/iattributes.html" class="tsd-kind-icon">IAttributes</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/ioftype.html" class="tsd-kind-icon">IOf<wbr>Type</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ioutput.html" class="tsd-kind-icon">IOutput</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/isetup.html" class="tsd-kind-icon">ISetup</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/isetupoutput.html" class="tsd-kind-icon">ISetup<wbr>Output</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/itheme.html" class="tsd-kind-icon">ITheme</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#telements" class="tsd-kind-icon">TElements</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#tvalue" class="tsd-kind-icon">TValue</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="globals.html#load" class="tsd-kind-icon">load</a></li>
+								<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#theming" class="tsd-kind-icon">theming</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="telements" class="tsd-anchor"></a>
+					<h3>TElements</h3>
+					<div class="tsd-signature tsd-kind-icon">TElements<span class="tsd-signature-symbol">:</span> <a href="interfaces/ioftype.html" class="tsd-signature-type">IOfType</a><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/ioftype.html" class="tsd-signature-type">IOfType</a><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#tvalue" class="tsd-signature-type">TValue</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rafamel/armory/blob/d480dc7/packages/variable-theming/src/types.ts#L7">types.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="tvalue" class="tsd-anchor"></a>
+					<h3>TValue</h3>
+					<div class="tsd-signature tsd-kind-icon">TValue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rafamel/armory/blob/d480dc7/packages/variable-theming/src/types.ts#L5">types.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="load" class="tsd-anchor"></a>
-					<h3>load</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="interfaces/iattributes.html" class="tsd-signature-type">IAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ErrorEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+					<a name="theming" class="tsd-anchor"></a>
+					<h3>theming</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">theming<span class="tsd-signature-symbol">(</span>theme<span class="tsd-signature-symbol">: </span><a href="interfaces/itheme.html" class="tsd-signature-type">ITheme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, elements<span class="tsd-signature-symbol">: </span><a href="globals.html#telements" class="tsd-signature-type">TElements</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/isetupoutput.html" class="tsd-signature-type">ISetupOutput</a></li>
+						<li class="tsd-signature tsd-kind-icon">theming<span class="tsd-signature-symbol">(</span>theme<span class="tsd-signature-symbol">: </span><a href="interfaces/itheme.html" class="tsd-signature-type">ITheme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, elements<span class="tsd-signature-symbol">?: </span><a href="globals.html#telements" class="tsd-signature-type">TElements</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/ioutput.html" class="tsd-signature-type">IOutput</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/rafamel/armory/blob/d480dc7/packages/remote-script/src/index.ts#L8">index.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/rafamel/armory/blob/d480dc7/packages/variable-theming/src/theming.ts#L6">theming.ts:6</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates styles as an object -<code>styles</code>- and as a string -<code>css</code>- assigning css variables to their defined values. You can then inject these for usage in your css.</p>
+								</div>
+								<p>If a second object is passed, it will also generate <code>setup</code> styles, assigning property values for all elements with names of <code>elements</code> keys to their respective variable.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>src: <span class="tsd-signature-type">string</span></h5>
+									<h5>theme: <a href="interfaces/itheme.html" class="tsd-signature-type">ITheme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> attributes: <a href="interfaces/iattributes.html" class="tsd-signature-type">IAttributes</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<h5>elements: <a href="globals.html#telements" class="tsd-signature-type">TElements</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ErrorEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/isetupoutput.html" class="tsd-signature-type">ISetupOutput</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/rafamel/armory/blob/d480dc7/packages/variable-theming/src/theming.ts#L7">theming.ts:7</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates styles as an object -<code>styles</code>- and as a string -<code>css</code>- assigning css variables to their defined values. You can then inject these for usage in your css.</p>
+								</div>
+								<p>If a second object is passed, it will also generate <code>setup</code> styles, assigning property values for all elements with names of <code>elements</code> keys to their respective variable.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>theme: <a href="interfaces/itheme.html" class="tsd-signature-type">ITheme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> elements: <a href="globals.html#telements" class="tsd-signature-type">TElements</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/ioutput.html" class="tsd-signature-type">IOutput</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -120,11 +184,29 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/iattributes.html" class="tsd-kind-icon">IAttributes</a>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/ioftype.html" class="tsd-kind-icon">IOf<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#load" class="tsd-kind-icon">load</a>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ioutput.html" class="tsd-kind-icon">IOutput</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isetup.html" class="tsd-kind-icon">ISetup</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isetupoutput.html" class="tsd-kind-icon">ISetup<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itheme.html" class="tsd-kind-icon">ITheme</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#telements" class="tsd-kind-icon">TElements</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tvalue" class="tsd-kind-icon">TValue</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="globals.html#theming" class="tsd-kind-icon">theming</a>
 					</li>
 				</ul>
 			</nav>
