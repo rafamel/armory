@@ -1,16 +1,16 @@
 # prefetchit
 
-[![Version](https://img.shields.io/github/package-json/v/rafamel/prefetchit.svg)](https://github.com/rafamel/prefetchit)
-[![Build Status](https://travis-ci.org/rafamel/prefetchit.svg)](https://travis-ci.org/rafamel/prefetchit)
-[![Coverage](https://img.shields.io/coveralls/rafamel/prefetchit.svg)](https://coveralls.io/github/rafamel/prefetchit)
-[![Dependencies](https://david-dm.org/rafamel/prefetchit/status.svg)](https://david-dm.org/rafamel/prefetchit)
-[![Vulnerabilities](https://snyk.io/test/npm/prefetchit/badge.svg)](https://snyk.io/test/npm/prefetchit)
-[![Issues](https://img.shields.io/github/issues/rafamel/prefetchit.svg)](https://github.com/rafamel/prefetchit/issues)
-[![License](https://img.shields.io/github/license/rafamel/prefetchit.svg)](https://github.com/rafamel/prefetchit/blob/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/prefetchit.svg)](https://www.npmjs.com/package/prefetchit)
+[![Build Status](https://img.shields.io/travis/rafamel/armory/master.svg)](https://travis-ci.org/rafamel/armory)
+[![Coverage](https://img.shields.io/coveralls/rafamel/armory/master.svg)](https://coveralls.io/github/rafamel/armory)
+[![Dependencies](https://img.shields.io/david/rafamel/armory.svg?path=packages%2Fprefetchit)](https://david-dm.org/rafamel/armory.svg?path=packages%2Fprefetchit)
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/prefetchit.svg)](https://snyk.io/test/npm/prefetchit)
+[![License](https://img.shields.io/github/license/rafamel/armory.svg)](https://github.com/rafamel/armory/blob/master/LICENSE)
+[![Types](https://img.shields.io/npm/types/prefetchit.svg)](https://www.npmjs.com/package/prefetchit)
 
-<!-- markdownlint-disable MD036 -->
-**A naive prefetch for the browser.**
-<!-- markdownlint-enable MD036 -->
+> A naive prefetch for the browser.
+
+If you find it useful, consider [starring the project](https://github.com/rafamel/prefetchit) 💪 and/or following [its author](https://github.com/rafamel) ❤️ -there's more on the way!
 
 ## Install
 
