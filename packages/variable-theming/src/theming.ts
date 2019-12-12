@@ -1,16 +1,14 @@
 import parseTheme from './parse/theme';
 import { Theme, SetupOutput, Output, Elements, Setup } from '~/types';
 
-export default theming;
-
-function theming(theme: Theme | null, elements: Elements): SetupOutput;
-function theming(theme: Theme | null, elements?: Elements): Output;
+export function theming(theme: Theme | null, elements: Elements): SetupOutput;
+export function theming(theme: Theme | null, elements?: Elements): Output;
 /**
  * Generates styles as an object -`styles`- and as a string -`css`- assigning css variables to their defined values. You can then inject these for usage in your css.
  *
  * If a second object is passed, it will also generate `setup` styles, assigning property values for all elements with names of `elements` keys to their respective variable.
  */
-function theming(
+export function theming(
   theme: Theme | null,
   elements?: Elements
 ): Output | SetupOutput {

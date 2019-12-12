@@ -1,2 +1,2 @@
-export { default } from './theming';
+export * from './theming';
 export * from './types';
