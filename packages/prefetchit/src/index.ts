@@ -1,9 +1,9 @@
-interface IResources {
+interface Resources {
   done: { [key: string]: boolean };
   pending: { [key: string]: boolean };
 }
 
-const resources: IResources = {
+const resources: Resources = {
   done: {},
   pending: {}
 };

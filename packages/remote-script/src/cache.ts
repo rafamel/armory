@@ -1,5 +1,5 @@
-export interface ICache {
+export interface Cache {
   [key: string]: Promise<ErrorEvent | null>;
 }
 
-export const cache: ICache = {};
+export const cache: Cache = {};

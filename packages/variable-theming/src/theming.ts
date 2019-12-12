@@ -1,21 +1,21 @@
 import parseTheme from './parse/theme';
-import { ITheme, ISetupOutput, IOutput, TElements, ISetup } from '~/types';
+import { Theme, SetupOutput, Output, Elements, Setup } from '~/types';
 
 export default theming;
 
-function theming(theme: ITheme | null, elements: TElements): ISetupOutput;
-function theming(theme: ITheme | null, elements?: TElements): IOutput;
+function theming(theme: Theme | null, elements: Elements): SetupOutput;
+function theming(theme: Theme | null, elements?: Elements): Output;
 /**
  * Generates styles as an object -`styles`- and as a string -`css`- assigning css variables to their defined values. You can then inject these for usage in your css.
  *
  * If a second object is passed, it will also generate `setup` styles, assigning property values for all elements with names of `elements` keys to their respective variable.
  */
 function theming(
-  theme: ITheme | null,
-  elements?: TElements
-): IOutput | ISetupOutput {
-  const base: IOutput = { css: '', styles: {} };
-  const setup: ISetup = { css: '', styles: {} };
+  theme: Theme | null,
+  elements?: Elements
+): Output | SetupOutput {
+  const base: Output = { css: '', styles: {} };
+  const setup: Setup = { css: '', styles: {} };
 
   if (theme) {
     parseTheme(theme, (variable, value) => {

@@ -1,13 +1,13 @@
 import flatten from 'flat';
 import decamelize from 'decamelize';
 import parseValue from './value';
-import { ITheme, TValue, IOfType } from '~/types';
+import { Theme, Value } from '~/types';
 
 export default function parseTheme(
-  theme: ITheme,
+  theme: Theme,
   fn: (variable: string, value: string) => void
 ): void {
-  const flat: IOfType<TValue> = flatten(theme, { delimiter: '-' });
+  const flat: Record<string, Value> = flatten(theme, { delimiter: '-' });
   const entries = Object.entries(flat);
   for (const [camelName, rawValue] of entries) {
     const name = decamelize(camelName, '-');

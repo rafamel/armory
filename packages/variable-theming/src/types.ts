@@ -1,25 +1,21 @@
-export interface IOfType<T> {
-  [key: string]: T;
+export type Value = string | number | null | undefined | void;
+
+export type Elements = Record<string, Record<string, Value>>;
+
+export interface Theme {
+  [key: string]: Theme | Value;
 }
 
-export type TValue = string | number | null | undefined | void;
-
-export type TElements = IOfType<IOfType<TValue>>;
-
-export interface ITheme {
-  [key: string]: ITheme | TValue;
-}
-
-export interface IOutput {
+export interface Output {
   css: string;
-  styles: IOfType<string>;
+  styles: Record<string, string>;
 }
 
-export interface ISetup {
+export interface Setup {
   css: string;
-  styles: IOfType<IOfType<string>>;
+  styles: Record<string, Record<string, string>>;
 }
 
-export interface ISetupOutput extends IOutput {
-  setup: ISetup;
+export interface SetupOutput extends Output {
+  setup: Setup;
 }

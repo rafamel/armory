@@ -1,13 +1,13 @@
 import { cache } from './cache';
 
-export interface IAttributes {
+export interface Attributes {
   async?: boolean;
   [key: string]: any;
 }
 
 export default function load(
   src: string,
-  attributes: IAttributes = {}
+  attributes: Attributes = {}
 ): Promise<ErrorEvent | null> {
   // Ensure it's a browser environment
   if (typeof window === 'undefined' || typeof window.document === 'undefined') {
