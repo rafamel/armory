@@ -104,7 +104,7 @@ import { palettes, theming } from 'variable-theming';
 const theme = theming({
   unit: { text: '1rem', space: '1rem', radius: '0.5rem' },
   palette: palettes()({
-    primary: { 
+    primary: {
       main: 'rgba(49, 50, 52, 0.85)',
       tint: '#B2B2B2',
       contrast: '#fafafa'
@@ -112,7 +112,7 @@ const theme = theming({
     dark: {
       main: '#222428',
       tint: '#383a3e',
-      shade: '#1e2023' 
+      shade: '#1e2023'
     },
     light: {
       main: '#fafafa',
@@ -138,7 +138,7 @@ const mui = createMuiTheme({
       dark: {
         main: '#222428',
         tint: '#383a3e',
-        shade: '#1e2023' 
+        shade: '#1e2023'
       },
       light: {
         main: '#fafafa',

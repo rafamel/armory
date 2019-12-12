@@ -6,8 +6,6 @@
 
 > A monorepo of simple frontend libraries for everyday happiness.
 
-If you find it useful, consider [starring the project](https://github.com/rafamel/armory) 💪 and/or following [its author](https://github.com/rafamel) ❤️ -there's more on the way!
-
 ## Packages
 
 * [*variable-theming:*](https://github.com/rafamel/armory/tree/master/packages/variable-theming) CSS theming based on custom properties.
