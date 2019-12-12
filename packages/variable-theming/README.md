@@ -18,6 +18,8 @@
 
 * [Documentation](https://rafamel.github.io/armory/variable-theming/globals.html)
 
+### Theming
+
 [`theming`](https://rafamel.github.io/armory/variable-theming/globals.html#theming) takes a non opinionated approach regarding the contents of your theme.
 
 ```javascript
@@ -28,9 +30,9 @@ const mainTheme = {
   custom: {
     primaryPalette: {
       main: 'red',
-      dark: 'black',
-      light: 'white',
-      contrast: 'blue'
+      contrast: 'blue',
+      tint: 'white',
+      shade: 'black'
     }
   },
   elements: {
@@ -46,9 +48,9 @@ const secondaryTheme = {
   custom: {
     primaryPalette: {
       main: 'green',
-      dark: 'black',
-      light: 'white',
-      contrast: 'red'
+      contrast: 'red',
+      tint: 'white',
+      shade: 'black'
     }
   },
   elements: {
@@ -88,4 +90,63 @@ const secondary = theming({
   ...secondaryTheme.custom
 });
 inject(`.someClassSecondaryWillApplyTo { ${secondary.css} }`);
+```
+
+### Palettes
+
+#### `palettes(options?: PaletteOptions): Function`
+
+Returns a function that, taking a record of `PaletteInput`s, returns a record of complete `Palettes`.
+
+```javascript
+import { palettes, theming } from 'variable-theming';
+
+const theme = theming({
+  unit: { text: '1rem', space: '1rem', radius: '0.5rem' },
+  palette: palettes()({
+    primary: { 
+      main: 'rgba(49, 50, 52, 0.85)',
+      tint: '#B2B2B2',
+      contrast: '#fafafa'
+    },
+    dark: {
+      main: '#222428',
+      tint: '#383a3e',
+      shade: '#1e2023' 
+    },
+    light: {
+      main: '#fafafa',
+      contrast: 'rgba(49, 50, 52, 0.85)',
+      shade: '#f5f5f5',
+      accent: '#B2B2B2'
+    }
+  })
+});
+```
+
+#### `palettes.mui(palettes: Record<string, Palette>): Record<string, MuiPalette>`
+
+Creates a `Material UI` compatible palette from a `Palette`.
+
+```javascript
+import { palettes } from 'variable-theming';
+import { createMuiTheme } from '@material-ui/core/styles';
+
+const mui = createMuiTheme({
+  palette: palettes.mui(
+    palettes()({
+      dark: {
+        main: '#222428',
+        tint: '#383a3e',
+        shade: '#1e2023' 
+      },
+      light: {
+        main: '#fafafa',
+        contrast: 'rgba(49, 50, 52, 0.85)',
+        shade: '#f5f5f5',
+        accent: '#B2B2B2'
+      }
+    })
+  )
+});
 ```
