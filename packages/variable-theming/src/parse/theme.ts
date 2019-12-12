@@ -9,7 +9,7 @@ export default function parseTheme(
 ): void {
   const flat: IOfType<TValue> = flatten(theme, { delimiter: '-' });
   const entries = Object.entries(flat);
-  for (let [camelName, rawValue] of entries) {
+  for (const [camelName, rawValue] of entries) {
     const name = decamelize(camelName, '-');
     const value = parseValue(rawValue);
     if (value) fn('--' + name, value);

@@ -14,7 +14,7 @@ export default function load(
     return Promise.reject(Error(`Tried to load a script outside of a browser`));
   }
 
-  if (!cache.hasOwnProperty(src)) {
+  if (!Object.hasOwnProperty.call(cache, src)) {
     cache[src] = new Promise((resolve, reject) => {
       const element = document.createElement('script');
 
@@ -33,7 +33,7 @@ export default function load(
         element.src = src;
         const entries = Object.entries(attributes);
         delete attributes.src;
-        for (let [key, value] of entries) {
+        for (const [key, value] of entries) {
           (element as any)[key] = value;
         }
 

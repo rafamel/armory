@@ -10,8 +10,6 @@
 
 > A naive prefetch for the browser.
 
-If you find it useful, consider [starring the project](https://github.com/rafamel/prefetchit) 💪 and/or following [its author](https://github.com/rafamel) ❤️ -there's more on the way!
-
 ## Install
 
 [`npm install prefetchit`](https://www.npmjs.com/package/prefetchit)

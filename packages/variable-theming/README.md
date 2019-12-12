@@ -10,8 +10,6 @@
 
 > CSS theming based on custom properties.
 
-If you find it useful, consider [starring the project](https://github.com/rafamel/armory/tree/master/packages/variable-theming) 💪 and/or following [its author](https://github.com/rafamel) ❤️ -there's more on the way!
-
 ## Install
 
 [`npm install variable-theming`](https://www.npmjs.com/package/variable-theming)

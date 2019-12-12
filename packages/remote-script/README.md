@@ -10,8 +10,6 @@
 
 > Programmatically Loads remote scripts via script tag.
 
-If you find it useful, consider [starring the project](https://github.com/rafamel/remote-script) 💪 and/or following [its author](https://github.com/rafamel) ❤️ -there's more on the way!
-
 ## Install
 
 [`npm install remote-script`](https://www.npmjs.com/package/remote-script)

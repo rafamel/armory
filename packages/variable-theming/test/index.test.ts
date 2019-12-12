@@ -1,3 +1,5 @@
-test(`Example`, () => {
-  expect(1).toBe(1);
+describe(`- Main`, () => {
+  test(`Doesn't throw`, () => {
+    expect(() => null).not.toThrow();
+  });
 });

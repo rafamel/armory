@@ -19,7 +19,7 @@ function append(href: string): void {
 function run(): void {
   const keys = Object.keys(resources.pending);
 
-  for (let key of keys) {
+  for (const key of keys) {
     append(key);
   }
 
@@ -28,8 +28,12 @@ function run(): void {
 }
 
 function add(resource: string): boolean {
-  if (resources.done.hasOwnProperty(resource)) return false;
-  if (resources.pending.hasOwnProperty(resource)) return true;
+  if (Object.hasOwnProperty.call(resources.done, resource)) {
+    return false;
+  }
+  if (Object.hasOwnProperty.call(resources.pending, resource)) {
+    return true;
+  }
 
   resources.pending[resource] = true;
   return true;
