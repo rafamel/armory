@@ -1,6 +1,6 @@
 {
   "name": "prefetchit",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Rafa Mel",
   "description": "A naive prefetch for the browser",
   "keywords": [

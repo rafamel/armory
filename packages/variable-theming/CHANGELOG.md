@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/rafamel/armory/compare/variable-theming@1.0.3...variable-theming@2.0.0) (2019-12-12)
+
+
+### Bug Fixes
+
+* removes prefixes from interfaces ([0f628ef](https://github.com/rafamel/armory/commit/0f628efa5da9e91210e01f36d346103ecf15c9f6))
+* updates setup and dependencies ([188f8be](https://github.com/rafamel/armory/commit/188f8be61aa2e972061a0892fa712f86b9797b5f))
+
+
+### Code Refactoring
+
+* **variable-theming:** exports theming as a named export ([daef05d](https://github.com/rafamel/armory/commit/daef05dee2406eb19f70b07f4900c566fc8b1466))
+
+
+### Features
+
+* **variable-theming:** adds palettes ([657d6d4](https://github.com/rafamel/armory/commit/657d6d414164855bfc16bdfbcad4f837833997ec))
+
+
+### BREAKING CHANGES
+
+* **variable-theming:** exports theming as a named export
+* Interfaces and types name changes
+
+
+
+
+
 ## 1.0.3 (2019-07-10)
 
 **Note:** Version bump only for package variable-theming

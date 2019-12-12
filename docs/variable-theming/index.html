@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>variable-theming 1.0.3</title>
+	<title>variable-theming 2.0.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">variable-theming 1.0.3</a>
+					<a href="index.html" class="title">variable-theming 2.0.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> variable-theming 1.0.3</h1>
+			<h1> variable-theming 2.0.0</h1>
 		</div>
 	</div>
 </header>
@@ -62,7 +62,9 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="variable-theming">variable-theming</h1>
+				<a href="#variable-theming" id="variable-theming" style="color: inherit; text-decoration: none;">
+					<h1>variable-theming</h1>
+				</a>
 				<p><a href="https://www.npmjs.com/package/variable-theming"><img src="https://img.shields.io/npm/v/variable-theming.svg" alt="Version"></a>
 					<a href="https://travis-ci.org/rafamel/armory"><img src="https://img.shields.io/travis/rafamel/armory/master.svg" alt="Build Status"></a>
 					<a href="https://coveralls.io/github/rafamel/armory"><img src="https://img.shields.io/coveralls/rafamel/armory/master.svg" alt="Coverage"></a>
@@ -73,13 +75,19 @@
 				<blockquote>
 					<p>CSS theming based on custom properties.</p>
 				</blockquote>
-				<p>If you find it useful, consider <a href="https://github.com/rafamel/armory/tree/master/packages/variable-theming">starring the project</a> 💪 and/or following <a href="https://github.com/rafamel">its author</a> ❤️ -there&#39;s more on the way!</p>
-				<h2 id="install">Install</h2>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
 				<p><a href="https://www.npmjs.com/package/variable-theming"><code>npm install variable-theming</code></a></p>
-				<h2 id="usage">Usage</h2>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
 				<ul>
 					<li><a href="https://rafamel.github.io/armory/variable-theming/globals.html">Documentation</a></li>
 				</ul>
+				<a href="#theming" id="theming" style="color: inherit; text-decoration: none;">
+					<h3>Theming</h3>
+				</a>
 				<p><a href="https://rafamel.github.io/armory/variable-theming/globals.html#theming"><code>theming</code></a> takes a non opinionated approach regarding the contents of your theme.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> inject <span class="hljs-keyword">from</span> <span class="hljs-string">'style-inject'</span>;
 <span class="hljs-keyword">import</span> theming <span class="hljs-keyword">from</span> <span class="hljs-string">'variable-theming'</span>;
@@ -88,9 +96,9 @@
   <span class="hljs-attr">custom</span>: {
     <span class="hljs-attr">primaryPalette</span>: {
       <span class="hljs-attr">main</span>: <span class="hljs-string">'red'</span>,
-      <span class="hljs-attr">dark</span>: <span class="hljs-string">'black'</span>,
-      <span class="hljs-attr">light</span>: <span class="hljs-string">'white'</span>,
-      <span class="hljs-attr">contrast</span>: <span class="hljs-string">'blue'</span>
+      <span class="hljs-attr">contrast</span>: <span class="hljs-string">'blue'</span>,
+      <span class="hljs-attr">tint</span>: <span class="hljs-string">'white'</span>,
+      <span class="hljs-attr">shade</span>: <span class="hljs-string">'black'</span>
     }
   },
   <span class="hljs-attr">elements</span>: {
@@ -106,9 +114,9 @@
   <span class="hljs-attr">custom</span>: {
     <span class="hljs-attr">primaryPalette</span>: {
       <span class="hljs-attr">main</span>: <span class="hljs-string">'green'</span>,
-      <span class="hljs-attr">dark</span>: <span class="hljs-string">'black'</span>,
-      <span class="hljs-attr">light</span>: <span class="hljs-string">'white'</span>,
-      <span class="hljs-attr">contrast</span>: <span class="hljs-string">'red'</span>
+      <span class="hljs-attr">contrast</span>: <span class="hljs-string">'red'</span>,
+      <span class="hljs-attr">tint</span>: <span class="hljs-string">'white'</span>,
+      <span class="hljs-attr">shade</span>: <span class="hljs-string">'black'</span>
     }
   },
   <span class="hljs-attr">elements</span>: {
@@ -148,6 +156,60 @@ inject(<span class="hljs-string">`:root { <span class="hljs-subst">${main.css}</
   ...secondaryTheme.custom
 });
 inject(<span class="hljs-string">`.someClassSecondaryWillApplyTo { <span class="hljs-subst">${secondary.css}</span> }`</span>);</code></pre>
+				<a href="#palettes" id="palettes" style="color: inherit; text-decoration: none;">
+					<h3>Palettes</h3>
+				</a>
+				<a href="#codepalettesoptions-paletteoptions-functioncode" id="codepalettesoptions-paletteoptions-functioncode" style="color: inherit; text-decoration: none;">
+					<h4><code>palettes(options?: PaletteOptions): Function</code></h4>
+				</a>
+				<p>Returns a function that, taking a record of <code>PaletteInput</code>s, returns a record of complete <code>Palettes</code>.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { palettes, theming } <span class="hljs-keyword">from</span> <span class="hljs-string">'variable-theming'</span>;
+
+<span class="hljs-keyword">const</span> theme = theming({
+  <span class="hljs-attr">unit</span>: { <span class="hljs-attr">text</span>: <span class="hljs-string">'1rem'</span>, <span class="hljs-attr">space</span>: <span class="hljs-string">'1rem'</span>, <span class="hljs-attr">radius</span>: <span class="hljs-string">'0.5rem'</span> },
+  <span class="hljs-attr">palette</span>: palettes()({
+    <span class="hljs-attr">primary</span>: {
+      <span class="hljs-attr">main</span>: <span class="hljs-string">'rgba(49, 50, 52, 0.85)'</span>,
+      <span class="hljs-attr">tint</span>: <span class="hljs-string">'#B2B2B2'</span>,
+      <span class="hljs-attr">contrast</span>: <span class="hljs-string">'#fafafa'</span>
+    },
+    <span class="hljs-attr">dark</span>: {
+      <span class="hljs-attr">main</span>: <span class="hljs-string">'#222428'</span>,
+      <span class="hljs-attr">tint</span>: <span class="hljs-string">'#383a3e'</span>,
+      <span class="hljs-attr">shade</span>: <span class="hljs-string">'#1e2023'</span>
+    },
+    <span class="hljs-attr">light</span>: {
+      <span class="hljs-attr">main</span>: <span class="hljs-string">'#fafafa'</span>,
+      <span class="hljs-attr">contrast</span>: <span class="hljs-string">'rgba(49, 50, 52, 0.85)'</span>,
+      <span class="hljs-attr">shade</span>: <span class="hljs-string">'#f5f5f5'</span>,
+      <span class="hljs-attr">accent</span>: <span class="hljs-string">'#B2B2B2'</span>
+    }
+  })
+});</code></pre>
+				<a href="#codepalettesmuipalettes-recordltstring-palettegt-recordltstring-muipalettegtcode" id="codepalettesmuipalettes-recordltstring-palettegt-recordltstring-muipalettegtcode" style="color: inherit; text-decoration: none;">
+					<h4><code>palettes.mui(palettes: Record&lt;string, Palette&gt;): Record&lt;string, MuiPalette&gt;</code></h4>
+				</a>
+				<p>Creates a <code>Material UI</code> compatible palette from a <code>Palette</code>.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { palettes } <span class="hljs-keyword">from</span> <span class="hljs-string">'variable-theming'</span>;
+<span class="hljs-keyword">import</span> { createMuiTheme } <span class="hljs-keyword">from</span> <span class="hljs-string">'@material-ui/core/styles'</span>;
+
+<span class="hljs-keyword">const</span> mui = createMuiTheme({
+  <span class="hljs-attr">palette</span>: palettes.mui(
+    palettes()({
+      <span class="hljs-attr">dark</span>: {
+        <span class="hljs-attr">main</span>: <span class="hljs-string">'#222428'</span>,
+        <span class="hljs-attr">tint</span>: <span class="hljs-string">'#383a3e'</span>,
+        <span class="hljs-attr">shade</span>: <span class="hljs-string">'#1e2023'</span>
+      },
+      <span class="hljs-attr">light</span>: {
+        <span class="hljs-attr">main</span>: <span class="hljs-string">'#fafafa'</span>,
+        <span class="hljs-attr">contrast</span>: <span class="hljs-string">'rgba(49, 50, 52, 0.85)'</span>,
+        <span class="hljs-attr">shade</span>: <span class="hljs-string">'#f5f5f5'</span>,
+        <span class="hljs-attr">accent</span>: <span class="hljs-string">'#B2B2B2'</span>
+      }
+    })
+  )
+});</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -160,28 +222,40 @@ inject(<span class="hljs-string">`.someClassSecondaryWillApplyTo { <span class="
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/ioftype.html" class="tsd-kind-icon">IOf<wbr>Type</a>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/muipalette.html" class="tsd-kind-icon">Mui<wbr>Palette</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ioutput.html" class="tsd-kind-icon">IOutput</a>
+						<a href="interfaces/output.html" class="tsd-kind-icon">Output</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/isetup.html" class="tsd-kind-icon">ISetup</a>
+						<a href="interfaces/paletteinput.html" class="tsd-kind-icon">Palette<wbr>Input</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/isetupoutput.html" class="tsd-kind-icon">ISetup<wbr>Output</a>
+						<a href="interfaces/paletteoptions.html" class="tsd-kind-icon">Palette<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/itheme.html" class="tsd-kind-icon">ITheme</a>
+						<a href="interfaces/setup.html" class="tsd-kind-icon">Setup</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/setupoutput.html" class="tsd-kind-icon">Setup<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/theme.html" class="tsd-kind-icon">Theme</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#telements" class="tsd-kind-icon">TElements</a>
+						<a href="globals.html#elements" class="tsd-kind-icon">Elements</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#tvalue" class="tsd-kind-icon">TValue</a>
+						<a href="globals.html#palette" class="tsd-kind-icon">Palette</a>
 					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#value" class="tsd-kind-icon">Value</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#palettes" class="tsd-kind-icon">palettes</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#theming" class="tsd-kind-icon">theming</a>
 					</li>
 				</ul>
@@ -201,6 +275,7 @@ inject(<span class="hljs-string">`.someClassSecondaryWillApplyTo { <span class="
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -249,7 +324,7 @@ inject(<span class="hljs-string">`.someClassSecondaryWillApplyTo { <span class="
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
