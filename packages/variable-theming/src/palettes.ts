@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { readableColor, lighten, darken, parseToRgb } from 'polished';
 import { RgbColor } from 'polished/lib/types/color';
 
@@ -98,7 +99,7 @@ export function palettes(options?: PaletteOptions) {
 palettes.mui = function muiPalettes<T extends Record<string, Palette>>(
   palettes: T
 ): { [P in keyof T]: MuiPalette } {
-  const toRgb = (color: RgbColor & { alpha?: number }) =>
+  const toRgb = (color: RgbColor & { alpha?: number }): string =>
     Object.hasOwnProperty.call(color, 'alpha')
       ? `rgba(${color.red}, ${color.green}, ${color.blue}, ${color.alpha})`
       : `rgb(${color.red}, ${color.green}, ${color.blue})`;
