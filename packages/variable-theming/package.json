@@ -61,7 +61,7 @@
     "@types/flat": "0.0.28"
   },
   "dependencies": {
-    "decamelize": "^3.2.0",
+    "decamelize": "^4.0.0",
     "flat": "^5.0.0",
     "polished": "^3.4.2"
   },
