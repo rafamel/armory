@@ -58,12 +58,12 @@
     "url": "https://github.com/rafamel/armory/issues"
   },
   "devDependencies": {
-    "@types/flat": "0.0.28"
+    "@types/flat": "^5.0.1"
   },
   "dependencies": {
-    "decamelize": "^3.2.0",
-    "flat": "^5.0.0",
-    "polished": "^3.4.2"
+    "decamelize": "^4.0.0",
+    "flat": "^5.0.2",
+    "polished": "^4.0.5"
   },
   "@pika/pack": {
     "pipeline": [

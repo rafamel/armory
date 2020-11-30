@@ -68,7 +68,7 @@ export function palettes(options?: PaletteOptions) {
       const main = palette.main;
       const contrast =
         palette.contrast ||
-        readableColor(main, opts.contrastLight, opts.contrastDark);
+        readableColor(main, opts.contrastLight, opts.contrastDark, false);
       const mainRgb = parseToRgb(main);
       const contrastRgb = parseToRgb(contrast);
 
