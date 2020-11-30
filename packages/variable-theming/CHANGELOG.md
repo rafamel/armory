@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/rafamel/armory/compare/variable-theming@2.0.0...variable-theming@2.0.1) (2020-11-30)
+
+
+### Bug Fixes
+
+* **variable-theming:** updates dependencies ([13b0cb5](https://github.com/rafamel/armory/commit/13b0cb5695f9411049e89e6fc4bf600b92c785f4))
+
+
+
+
+
 # [2.0.0](https://github.com/rafamel/armory/compare/variable-theming@1.0.3...variable-theming@2.0.0) (2019-12-12)
 
 

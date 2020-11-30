@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/rafamel/armory/compare/prefetchit@0.2.0...prefetchit@0.2.1) (2020-11-30)
+
+**Note:** Version bump only for package prefetchit
+
+
+
+
+
 # [0.2.0](https://github.com/rafamel/armory/compare/prefetchit@0.1.2...prefetchit@0.2.0) (2019-12-12)
 
 

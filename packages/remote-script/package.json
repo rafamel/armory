@@ -1,6 +1,6 @@
 {
   "name": "remote-script",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Rafa Mel",
   "description": "Programmatically Loads remote scripts via script tag",
   "keywords": [
